@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>T3MPURA — Bass DJ / Producer, Toronto</title>
-<meta name="description" content="T3MPURA — Toronto-based bass DJ and producer. Dubstep, hybrid trap, UK garage, UK bass, bass house. Shows, releases, and links.">
+<meta name="description" content="T3MPURA — Toronto-based bass DJ and producer. Dubstep, hybrid trap, UK garage, UK bass, bass house. Shows, gallery, releases, and links.">
+<link rel="icon" href="assets/logo/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/logo/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,10 +19,13 @@
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-head">
-  <a href="#top" class="mark">T3MPURA</a>
+  <a href="#top" class="mark">
+    <img src="assets/logo/wordmark-white.png" alt="T3MPURA">
+  </a>
   <nav class="site-nav" aria-label="Primary">
     <a href="#about">about</a>
     <a href="#shows">shows</a>
+    <a href="#gallery">gallery</a>
     <a href="#releases">releases</a>
     <a href="#connect">connect</a>
   </nav>
@@ -31,33 +36,33 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-photo">
-      <img src="assets/hero.jpg" alt="T3MPURA behind the decks, crowd raving around the DJ booth" loading="eager">
+      <img src="assets/hero.jpg" alt="" loading="eager">
     </div>
+    <div class="hero-grid" aria-hidden="true"></div>
     <div class="hero-copy">
-      <h1 class="glitch-title" data-text="T3MPURA">T3MPURA</h1>
+      <div class="hero-mark" role="img" aria-label="T3MPURA"></div>
       <p class="hero-sub">bass DJ / producer — toronto, on</p>
     </div>
-    <div class="bolt" aria-hidden="true"></div>
   </section>
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
       <span>BASS KNOWS NO BOUNDS</span>
-      <span>·</span>
+      <span>◆</span>
       <span>NXNE MUSIC FESTIVAL 2026</span>
-      <span>·</span>
+      <span>◆</span>
       <span>THE HANGOUT @ ARTSCAPE 2</span>
-      <span>·</span>
+      <span>◆</span>
       <span>DUBSTEP — UK GARAGE — BASS HOUSE</span>
-      <span>·</span>
+      <span>◆</span>
       <span>BASS KNOWS NO BOUNDS</span>
-      <span>·</span>
+      <span>◆</span>
       <span>NXNE MUSIC FESTIVAL 2026</span>
-      <span>·</span>
+      <span>◆</span>
       <span>THE HANGOUT @ ARTSCAPE 2</span>
-      <span>·</span>
+      <span>◆</span>
       <span>DUBSTEP — UK GARAGE — BASS HOUSE</span>
-      <span>·</span>
+      <span>◆</span>
     </div>
   </div>
 
@@ -66,8 +71,8 @@
     <div class="about-photo">
       <img src="assets/booth.jpg" alt="T3MPURA mid-set, arm raised under blue and green stage lighting" loading="lazy">
     </div>
-    <div class="about-copy">
-      <p class="eyebrow">01 — about</p>
+    <div class="about-copy panel">
+      <p class="eyebrow">01 / about</p>
       <h2>bass knows<br>no bounds</h2>
       <p>T3MPURA is a Toronto-based bass DJ and producer whose sound lives beyond genre lines. Rooted in dubstep, his sets move freely through hybrid trap, UK garage, UK bass, and bass house — guided by one thing: energy.</p>
       <p>Having played the NXNE Music Festival and Artscape 2 in 2026, he keeps crowds locked in through constant momentum and carefully placed surprises, no matter what time it is in the night.</p>
@@ -84,12 +89,9 @@
 
   <!-- SHOWS -->
   <section class="shows" id="shows">
-    <div class="shows-bg">
-      <img src="assets/lasers.jpg" alt="" loading="lazy">
-    </div>
     <div class="shows-inner">
-      <p class="eyebrow eyebrow--light">02 — shows</p>
-      <h2 class="light">past shows</h2>
+      <p class="eyebrow">02 / shows</p>
+      <h2>past shows</h2>
       <p class="shows-note">set recordings linked where available.</p>
 
       <table class="show-table">
@@ -150,13 +152,21 @@
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <p class="eyebrow">03 / gallery</p>
+    <h2>photo dump</h2>
+    <p class="gallery-note">pick an event.</p>
+
+    <div class="gallery-tabs" role="tablist" aria-label="Gallery events"></div>
+    <div class="gallery-grid" role="tabpanel"></div>
+    <p class="gallery-empty" hidden>no photos in this one yet.</p>
+  </section>
+
   <!-- RELEASES -->
   <section class="releases" id="releases">
-    <div class="releases-photo">
-      <img src="assets/energy.jpg" alt="Crowd dancing with headphones and fur hat under a blue laser beam" loading="lazy">
-    </div>
-    <div class="releases-inner">
-      <p class="eyebrow">03 — releases</p>
+    <div class="releases-inner panel">
+      <p class="eyebrow">04 / releases</p>
       <h2>soundcloud edits</h2>
 
       <div class="readout" role="group" aria-label="SoundCloud stats, last 12 months">
@@ -207,8 +217,11 @@
 
   <!-- CONNECT -->
   <section class="connect" id="connect">
+    <div class="connect-photo">
+      <img src="assets/portrait.jpg" alt="Portrait of T3MPURA in black streetwear" loading="lazy">
+    </div>
     <div class="connect-copy">
-      <p class="eyebrow">04 — connect</p>
+      <p class="eyebrow">05 / connect</p>
       <h2>link up</h2>
       <ul class="link-list">
         <li><a href="https://soundcloud.com/t3mpura" target="_blank" rel="noopener"><span>soundcloud</span><small>T3MPURA</small></a></li>
@@ -218,9 +231,6 @@
         <li><a href="mailto:t3mpura.contact@gmail.com"><span>email</span><small>t3mpura.contact@gmail.com</small></a></li>
       </ul>
     </div>
-    <div class="connect-photo">
-      <img src="assets/portrait.jpg" alt="Portrait of T3MPURA in black streetwear" loading="lazy">
-    </div>
   </section>
 
 </main>
@@ -228,13 +238,22 @@
 <footer class="site-foot">
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>TORONTO, ON</span><span>·</span><span>BOOKING: T3MPURA.CONTACT@GMAIL.COM</span><span>·</span>
-      <span>TORONTO, ON</span><span>·</span><span>BOOKING: T3MPURA.CONTACT@GMAIL.COM</span><span>·</span>
+      <span>TORONTO, ON</span><span>◆</span><span>BOOKING: T3MPURA.CONTACT@GMAIL.COM</span><span>◆</span>
+      <span>TORONTO, ON</span><span>◆</span><span>BOOKING: T3MPURA.CONTACT@GMAIL.COM</span><span>◆</span>
     </div>
   </div>
   <p class="foot-note">© <span id="year"></span> T3MPURA</p>
 </footer>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+</div>
+
 <script src="script.js"></script>
+<script src="gallery.js"></script>
 </body>
 </html>
