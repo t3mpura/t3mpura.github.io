@@ -477,6 +477,15 @@ h1, h2{
   gap: 1rem;
   flex-wrap: wrap;
 }
+.track-thumb{
+  width: 4.5rem;
+  height: 4.5rem;
+  flex: 0 0 4.5rem;
+  object-fit: cover;
+  border: 1px solid var(--hair);
+  border-radius: 3px;
+}
+.track-list li:has(.track-thumb) .track-main{ flex: 1 1 18rem; }
 .track-name{ display: block; font-size: 1rem; }
 .track-name em{ font-style: normal; color: var(--lilac); }
 .track-artists{
