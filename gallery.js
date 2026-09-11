@@ -10,6 +10,8 @@ const GALLERY_IMAGES = [
   "assets/gallery/8.jpg",
   "assets/gallery/9.jpg",
   "assets/gallery/10.jpg",
+  "assets/gallery/11.jpg",
+  "assets/gallery/12.jpg"
 ];
 
 (function () {
