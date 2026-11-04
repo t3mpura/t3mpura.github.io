@@ -14,7 +14,12 @@ const GALLERY_IMAGES = [
   "assets/gallery/11.jpg",
   "assets/gallery/12.jpg",
   "assets/gallery/13.jpg",
-  "assets/gallery/10.jpg"
+  "assets/gallery/10.jpg",
+  "assets/gallery/16.jpg",
+  "assets/gallery/17.jpg",
+  "assets/gallery/18.jpg",
+  "assets/gallery/19.jpg",
+  "assets/gallery/20.jpg",
 ];
 
 (function () {
@@ -29,7 +34,11 @@ const GALLERY_IMAGES = [
 
   if (!gridEl) return;
 
-  const activeImages = GALLERY_IMAGES;
+  const activeImages = [...GALLERY_IMAGES];
+  for (let i = activeImages.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [activeImages[i], activeImages[j]] = [activeImages[j], activeImages[i]];
+  }
   let activeIndex = 0;
 
   function renderGrid() {
@@ -46,8 +55,9 @@ const GALLERY_IMAGES = [
       btn.type = "button";
       btn.setAttribute("aria-label", `Open photo ${i + 1}`);
       const img = document.createElement("img");
-      img.src = src;
+      img.src = src.replace("assets/gallery/", "assets/gallery/thumbs/");
       img.loading = "lazy";
+      img.decoding = "async";
       img.alt = `Gallery photo ${i + 1}`;
       btn.appendChild(img);
       btn.addEventListener("click", () => openLightbox(i));
